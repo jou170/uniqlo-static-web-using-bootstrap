@@ -1,6 +1,6 @@
 ![Screenshot 2025-03-04 200110](https://github.com/user-attachments/assets/51404deb-e2b6-427c-8b68-31d6fb16c2c2)# Uniqlo Web Clone (For Learning Purposes)
 
-This is a simple HTML, CSS, and JavaScript project that replicates the Uniqlo website layout. The project is built using the Bootstrap framework with custom modifications to match my design preferences.
+This is a simple HTML and CSS project that replicates the Uniqlo website layout. The project is built using the Bootstrap framework with custom modifications to match my design preferences.
 
 ## 🚀 Project Overview  
 - Developed with **HTML, CSS, and JavaScript**  
