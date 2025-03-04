@@ -1,0 +1,721 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>KOLEKSI PAKAIAN DAN AKSESORIS</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <style>
+    @font-face {
+      font-family: 'D-DINCondensed';
+      src: url("./font/D-DINCondensed.otf") format("opentype");
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'D-DIN';
+      src: url("./font/D-DIN.otf") format("opentype");
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'D-DINCondensed-Bold';
+      src: url("./font/D-DINCondensed-Bold.otf") format("opentype");
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'D-DIN-Bold';
+      src: url("./font/D-DIN-Bold.otf") format("opentype");
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    .bannerwomen {
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)), url(img/katalog/women/bigbanner.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+
+      width: auto;
+      height: 100vh;
+      color: white;
+      position: relative;
+      padding-top: 100px;
+    }
+
+    .bannermen {
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)), url(img/katalog/men/bigbanner.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+
+      width: auto;
+      height: 100vh;
+      color: white;
+      position: relative;
+      padding-top: 100px;
+    }
+
+    h1 {
+      font-size: 40pt;
+    }
+  </style>
+</head>
+
+
+<body>
+  <!-- header -->
+  <nav class="navbar navbar-expand-lg bg-light sticky-top">
+    <div class="container">
+      <a class="navbar-brand justify-content-start" href="landing.html">KELONTONG</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-start" id="navbarNavAltMarkup">
+        <div class="navbar-nav" style="font-family: D-DIN-Bold;">
+          <a class="nav-link" href="landing.html">HOME</a>
+          <a class="nav-link active" aria-current="page" href="catalog.html">CATALOG</a>
+          <a class="nav-link" href="#">ABOUT US</a>
+        </div>
+      </div>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+        <div class="navbar-nav" style="font-family: D-DIN-Bold;">
+          <a class="nav-link mx-2" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person"
+              viewBox="0 0 16 16">
+              <path
+                d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z" />
+            </svg>
+          </a>
+          <a class="nav-link mx-2" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-heart"
+              viewBox="0 0 16 16">
+              <path
+                d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+            </svg>
+          </a>
+          <a class="nav-link ms-2" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart3"
+              viewBox="0 0 16 16">
+              <path
+                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- isi -->
+  <div class="container-fluid bg-light py-3 px-5">
+    <!-- women -->
+    <div class="container-fluid">
+      <h1 style="font-family: D-DINCondensed-Bold;">WOMEN</h1>
+      <a href="detail.html" class="text-light" style="text-decoration: none;">
+        <div class="bannerwomen mb-5 px-4 py-5 d-flex align-item-stretch">
+          <div class="row">
+            <div class="col-10 align-self-end">
+              <h2 style="text-shadow: 0px 2px 3px grey; font-weight: 650;">Tampil effortless dengan t-shirt stylish.
+              </h2>
+              <br>
+              <h5 style="text-shadow: 0px 2px 3px grey; font-weight: 650;">T-Shirt Katun Dolman Oversize Lengan 3/4</h5>
+              <h2 style="color: red; font-family: D-DIN; font-weight: bold;">Rp149.000</h2>
+              <p style="color: red; font-family: D-DIN;">Harga Normal Rp199.000 Limited Offers 9 - 25 Des 2022</p>
+            </div>
+          </div>
+        </div>
+      </a>
+      <div class="row">
+        <div class="col-12 col-md-4">
+          <a href="detail.html" class="card text-dark mb-4" style="text-decoration: none;">
+            <img src="img/katalog/women/flare.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="my-1" style="font-family: D-DINCondensed-Bold;">Rok Midi Flare Kartun</h5>
+              <p class="my-1">Rok katun flare dengan nuansa feminin.</p>
+              <h4 style="font-family: D-DIN-Bold;">Rp599.000</h4>
+            </div>
+          </a>
+        </div>
+        <!-- bagian kanan katalog -->
+        <div class="col-12 col-md-8">
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            <div class="col d-flex align-items-stretch">
+              <a href="detail.html" class="card text-dark" style="text-decoration: none;">
+                <img src="img/katalog/women/c1.jpg" class="card-img-top" alt="...">
+                <div class="card-body d-flex flex-column">
+                  <div class="row">
+                    <div class="col">
+                      <p class="my-1 text-muted" style="font-family: D-DINCondensed-Bold;">WANITA</p>
+                    </div>
+                    <div class="col">
+                      <p class="my-1 text-muted text-end" style="font-family: D-DINCondensed-Bold;">XS-XXL</p>
+                    </div>
+                  </div>
+                  <h5 class="my-1" style="font-family: D-DINCondensed-Bold;">Cardigan UV Protection Kerah Bulat Lengan
+                    Panjang</h5>
+                  <br>
+                  <div class="mt-auto">
+                    <p class="my-1 text-muted">New Color</p>
+                    <h5 style="font-family: D-DIN-Bold;">Rp299.000</h5>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col d-flex align-items-stretch">
+              <a href="detail.html" class="card text-dark" style="text-decoration: none;">
+                <img src="img/katalog/women/c2.jpg" class="card-img-top" alt="...">
+                <div class="card-body d-flex flex-column">
+                  <div class="row">
+                    <div class="col">
+                      <p class="my-1 text-muted" style="font-family: D-DINCondensed-Bold;">WANITA</p>
+                    </div>
+                    <div class="col">
+                      <p class="my-1 text-muted text-end" style="font-family: D-DINCondensed-Bold;">XS-XXL</p>
+                    </div>
+                  </div>
+                  <h5 class="my-1" style="font-family: D-DINCondensed-Bold;">T-Shirt Crop Slub Jersey Lengan Panjang
+                  </h5>
+                  <br>
+                  <div class="mt-auto">
+                    <p class="my-1 text-muted">New</p>
+                    <h5 style="font-family: D-DIN-Bold;">Rp199.000</h5>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col d-flex align-items-stretch">
+              <a href="detail.html" class="card text-dark" style="text-decoration: none;">
+                <img src="img/katalog/women/c3.jpg" class="card-img-top" alt="...">
+                <div class="card-body d-flex flex-column">
+                  <div class="row">
+                    <div class="col">
+                      <p class="my-1 text-muted" style="font-family: D-DINCondensed-Bold;">WANITA</p>
+                    </div>
+                    <div class="col">
+                      <p class="my-1 text-muted text-end" style="font-family: D-DINCondensed-Bold;">XS-XXL</p>
+                    </div>
+                  </div>
+                  <h5 class="my-1" style="font-family: D-DINCondensed-Bold;">AIRism T-Shirt Mapping Kerah Bulat Lengan
+                    Pendek</h5>
+                  <br>
+                  <div class="mt-auto">
+                    <p class="my-1 text-muted">New Color</p>
+                    <h5 style="font-family: D-DIN-Bold;">Rp199.000</h5>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col d-flex align-items-stretch">
+              <a href="detail.html" class="card text-dark" style="text-decoration: none;">
+                <img src="img/katalog/women/c4.jpg" class="card-img-top" alt="...">
+                <div class="card-body d-flex flex-column">
+                  <div class="row">
+                    <div class="col">
+                      <p class="my-1 text-muted" style="font-family: D-DINCondensed-Bold;">WANITA</p>
+                    </div>
+                    <div class="col">
+                      <p class="my-1 text-muted text-end" style="font-family: D-DINCondensed-Bold;">58CM-70CM</p>
+                    </div>
+                  </div>
+                  <h5 class="my-1" style="font-family: D-DINCondensed-Bold;">Celana Lurus Katun Blend JW ANDERSON</h5>
+                  <br>
+                  <div class="mt-auto">
+                    <p class="my-1 text-muted">New, Limited Store</p>
+                    <h5 style="font-family: D-DIN-Bold;">Rp599.000</h5>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col d-flex align-items-stretch">
+              <a href="detail.html" class="card text-dark" style="text-decoration: none;">
+                <img src="img/katalog/women/c5.jpg" class="card-img-top" alt="...">
+                <div class="card-body d-flex flex-column">
+                  <div class="row">
+                    <div class="col">
+                      <p class="my-1 text-muted" style="font-family: D-DINCondensed-Bold;">WANITA</p>
+                    </div>
+                    <div class="col">
+                      <p class="my-1 text-muted text-end" style="font-family: D-DINCondensed-Bold;">XS-XXL</p>
+                    </div>
+                  </div>
+                  <h5 class="my-1" style="font-family: D-DINCondensed-Bold;">Celana Relax Seersucker (Garis)</h5>
+                  <br>
+                  <div class="mt-auto">
+                    <p class="my-1 text-muted">New</p>
+                    <h5 style="font-family: D-DIN-Bold;">Rp399.000</h5>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col d-flex align-items-stretch">
+              <a href="detail.html" class="card text-dark" style="text-decoration: none;">
+                <img src="img/katalog/women/c6.jpg" class="card-img-top" alt="...">
+                <div class="card-body d-flex flex-column">
+                  <div class="row">
+                    <div class="col">
+                      <p class="my-1 text-muted" style="font-family: D-DINCondensed-Bold;">WANITA</p>
+                    </div>
+                    <div class="col">
+                      <p class="my-1 text-muted text-end" style="font-family: D-DINCondensed-Bold;">58CM-70CM</p>
+                    </div>
+                  </div>
+                  <h5 class="my-1" style="font-family: D-DINCondensed-Bold;">Rok Flare JW ANDERSON</h5>
+                  <br>
+                  <div class="mt-auto">
+                    <p class="my-1 text-muted">New</p>
+                    <h5 style="font-family: D-DIN-Bold;">Rp599.000</h5>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col d-flex align-items-stretch">
+              <a href="detail.html" class="card text-dark" style="text-decoration: none;">
+                <img src="img/katalog/women/c7.jpg" class="card-img-top" alt="...">
+                <div class="card-body d-flex flex-column">
+                  <div class="row">
+                    <div class="col">
+                      <p class="my-1 text-muted" style="font-family: D-DINCondensed-Bold;">WANITA</p>
+                    </div>
+                    <div class="col">
+                      <p class="my-1 text-muted text-end" style="font-family: D-DINCondensed-Bold;">XS-XL</p>
+                    </div>
+                  </div>
+                  <h5 class="my-1" style="font-family: D-DINCondensed-Bold;">AIRism Katun Gaun Panjang Flare</h5>
+                  <br>
+                  <div class="mt-auto">
+                    <p class="my-1 text-muted"></p>
+                    <h5 style="font-family: D-DIN-Bold;">Rp499.000</h5>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col d-flex align-items-stretch">
+              <a href="detail.html" class="card text-dark" style="text-decoration: none;">
+                <img src="img/katalog/women/c8.jpg" class="card-img-top" alt="...">
+                <div class="card-body d-flex flex-column">
+                  <div class="row">
+                    <div class="col">
+                      <p class="my-1 text-muted" style="font-family: D-DINCondensed-Bold;">WANITA</p>
+                    </div>
+                    <div class="col">
+                      <p class="my-1 text-muted text-end" style="font-family: D-DINCondensed-Bold;">XS-L</p>
+                    </div>
+                  </div>
+                  <h5 class="my-1" style="font-family: D-DINCondensed-Bold;">Gaun Kaftan Linen Blend Lengan Pendek</h5>
+                  <br>
+                  <div class="mt-auto">
+                    <p class="my-1 text-muted">New, Limited Store</p>
+                    <h5 style="font-family: D-DIN-Bold;">Rp599.000</h5>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col d-flex align-items-stretch">
+              <a href="detail.html" class="card text-dark" style="text-decoration: none;">
+                <img src="img/katalog/women/c9.jpg" class="card-img-top" alt="...">
+                <div class="card-body d-flex flex-column">
+                  <div class="row">
+                    <div class="col">
+                      <p class="my-1 text-muted" style="font-family: D-DINCondensed-Bold;">WANITA</p>
+                    </div>
+                    <div class="col">
+                      <p class="my-1 text-muted text-end" style="font-family: D-DINCondensed-Bold;">S-L</p>
+                    </div>
+                  </div>
+                  <h5 class="my-1" style="font-family: D-DINCondensed-Bold;">Gaun Lipit Kerah Terbuka Lengan Pendek
+                    MARNI</h5>
+                  <br>
+                  <div class="mt-auto">
+                    <p class="my-1 text-muted">New, Limited Store</p>
+                    <h5 style="font-family: D-DIN-Bold;">Rp899.000</h5>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <a href="#"><img src="img/katalog/iklan.jpeg" class="col-12 my-4" alt="..."></a>
+
+    <!-- men -->
+    <div class="container-fluid">
+      <h1 style="font-family: D-DINCondensed-Bold;">MEN</h1>
+      <a href="detail.html" class="text-light" style="text-decoration: none;">
+        <div class="bannermen mb-5 px-4 py-5 d-flex align-item-stretch">
+          <div class="row">
+            <div class="col-10 align-self-end">
+              <h2 style="text-shadow: 0px 2px 3px grey; font-weight: 650;">T-shirt stylish terfavorit & berkualitas
+                tinggi.</h2>
+              <br>
+              <h5 style="text-shadow: 0px 2px 3px grey; font-weight: 650;">T-Shirt Kerah Bulat Lengan Pendek</h5>
+              <h2 style="color: red; font-family: D-DIN; font-weight: bold;">Rp129.000</h2>
+              <p style="color: red; font-family: D-DIN;">Harga Normal Rp149.000 Limited Offers 9 - 26 Des 2022</p>
+            </div>
+          </div>
+        </div>
+      </a>
+      <div class="row">
+        <div class="col-12 col-md-4">
+          <a href="detail.html" class="card text-dark mb-4" style="text-decoration: none;">
+            <img src="img/katalog/men/jaket.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="my-1" style="font-family: D-DINCondensed-Bold;">Jaket Comfort 2 Kancing (Serupa Wool)</h5>
+              <p class="my-1">Desain ramping yang nyaman untuk formal & kasual.</p>
+              <h4 style="font-family: D-DIN-Bold;">Rp899.000</h4>
+            </div>
+          </a>
+        </div>
+        <!-- bagian kanan katalog -->
+        <div class="col-12 col-md-8">
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            <div class="col d-flex align-items-stretch">
+              <a href="detail.html" class="card text-dark" style="text-decoration: none;">
+                <img src="img/katalog/men/c1.jpg" class="card-img-top" alt="...">
+                <div class="card-body d-flex flex-column">
+                  <div class="row">
+                    <div class="col">
+                      <p class="my-1 text-muted" style="font-family: D-DINCondensed-Bold;">UNISEKS</p>
+                    </div>
+                    <div class="col">
+                      <p class="my-1 text-muted text-end" style="font-family: D-DINCondensed-Bold;">XS-XXL</p>
+                    </div>
+                  </div>
+                  <h5 class="my-1" style="font-family: D-DINCondensed-Bold;">Jaket Kemeja Luaran</h5>
+                  <br>
+                  <div class="mt-auto">
+                    <p class="my-1 text-muted">New Color</p>
+                    <h5 style="font-family: D-DIN-Bold;">Rp899.000</h5>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col d-flex align-items-stretch">
+              <a href="detail.html" class="card text-dark" style="text-decoration: none;">
+                <img src="img/katalog/men/c2.jpg" class="card-img-top" alt="...">
+                <div class="card-body d-flex flex-column">
+                  <div class="row">
+                    <div class="col">
+                      <p class="my-1 text-muted" style="font-family: D-DINCondensed-Bold;">PRIA</p>
+                    </div>
+                    <div class="col">
+                      <p class="my-1 text-muted text-end" style="font-family: D-DINCondensed-Bold;">S-L</p>
+                    </div>
+                  </div>
+                  <h5 class="my-1" style="font-family: D-DINCondensed-Bold;">Jaket Parka Ultra Light Down JW ANDERSON
+                  </h5>
+                  <br>
+                  <div class="mt-auto">
+                    <p class="my-1 text-muted">New, Limited Store</p>
+                    <h5 style="font-family: D-DIN-Bold;">Rp1.290.000</h5>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col d-flex align-items-stretch">
+              <a href="detail.html" class="card text-dark" style="text-decoration: none;">
+                <img src="img/katalog/men/c3.jpg" class="card-img-top" alt="...">
+                <div class="card-body d-flex flex-column">
+                  <div class="row">
+                    <div class="col">
+                      <p class="my-1 text-muted" style="font-family: D-DINCondensed-Bold;">UNISEKS</p>
+                    </div>
+                    <div class="col">
+                      <p class="my-1 text-muted text-end" style="font-family: D-DINCondensed-Bold;">XS-XXL</p>
+                    </div>
+                  </div>
+                  <h5 class="my-1" style="font-family: D-DINCondensed-Bold;">Rompi Ultra Light Down (Blok Warna)</h5>
+                  <br>
+                  <div class="mt-auto">
+                    <p class="my-1 text-muted">New</p>
+                    <h5 style="font-family: D-DIN-Bold;">Rp699.000</h5>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col d-flex align-items-stretch">
+              <a href="detail.html" class="card text-dark" style="text-decoration: none;">
+                <img src="img/katalog/men/c4.jpg" class="card-img-top" alt="...">
+                <div class="card-body d-flex flex-column">
+                  <div class="row">
+                    <div class="col">
+                      <p class="my-1 text-muted" style="font-family: D-DINCondensed-Bold;">PRIA</p>
+                    </div>
+                    <div class="col">
+                      <p class="my-1 text-muted text-end" style="font-family: D-DINCondensed-Bold;">XS-XXL</p>
+                    </div>
+                  </div>
+                  <h5 class="my-1" style="font-family: D-DINCondensed-Bold;">Celana Jogger Ultra Stretch Aktif</h5>
+                  <br>
+                  <div class="mt-auto">
+                    <p class="my-1 text-muted">New Color</p>
+                    <h5 style="font-family: D-DIN-Bold;">Rp399.000</h5>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col d-flex align-items-stretch">
+              <a href="detail.html" class="card text-dark" style="text-decoration: none;">
+                <img src="img/katalog/men/c5.jpg" class="card-img-top" alt="...">
+                <div class="card-body d-flex flex-column">
+                  <div class="row">
+                    <div class="col">
+                      <p class="my-1 text-muted" style="font-family: D-DINCondensed-Bold;">PRIA</p>
+                    </div>
+                    <div class="col">
+                      <p class="my-1 text-muted text-end" style="font-family: D-DINCondensed-Bold;">XS-XXL</p>
+                    </div>
+                  </div>
+                  <h5 class="my-1" style="font-family: D-DINCondensed-Bold;">Celana Smart Ankle (Serupa Wool)</h5>
+                  <br>
+                  <div class="mt-auto">
+                    <p class="my-1 text-muted"></p>
+                    <h5 style="font-family: D-DIN-Bold;">Rp599.000</h5>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col d-flex align-items-stretch">
+              <a href="detail.html" class="card text-dark" style="text-decoration: none;">
+                <img src="img/katalog/men/c6.jpg" class="card-img-top" alt="...">
+                <div class="card-body d-flex flex-column">
+                  <div class="row">
+                    <div class="col">
+                      <p class="my-1 text-muted" style="font-family: D-DINCondensed-Bold;">UNISEKS</p>
+                    </div>
+                    <div class="col">
+                      <p class="my-1 text-muted text-end" style="font-family: D-DINCondensed-Bold;">XS-XXL</p>
+                    </div>
+                  </div>
+                  <h5 class="my-1" style="font-family: D-DINCondensed-Bold;">Jeans Skinny Fit Warna Ultra Stretch</h5>
+                  <br>
+                  <div class="mt-auto">
+                    <p class="my-1 text-muted"></p>
+                    <h5 style="font-family: D-DIN-Bold;">Rp499.000</h5>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col d-flex align-items-stretch">
+              <a href="detail.html" class="card text-dark" style="text-decoration: none;">
+                <img src="img/katalog/men/c7.jpg" class="card-img-top" alt="...">
+                <div class="card-body d-flex flex-column">
+                  <div class="row">
+                    <div class="col">
+                      <p class="my-1 text-muted" style="font-family: D-DINCondensed-Bold;">PRIA</p>
+                    </div>
+                    <div class="col">
+                      <p class="my-1 text-muted text-end" style="font-family: D-DINCondensed-Bold;">XS-XXL</p>
+                    </div>
+                  </div>
+                  <h5 class="my-1" style="font-family: D-DINCondensed-Bold;">Boston Museum Lengan Pendek</h5>
+                  <br>
+                  <div class="mt-auto">
+                    <p class="my-1 text-muted">New</p>
+                    <h5 style="font-family: D-DIN-Bold;">Rp199.000</h5>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col d-flex align-items-stretch">
+              <a href="detail.html" class="card text-dark" style="text-decoration: none;">
+                <img src="img/katalog/men/c8.jpg" class="card-img-top" alt="...">
+                <div class="card-body d-flex flex-column">
+                  <div class="row">
+                    <div class="col">
+                      <p class="my-1 text-muted" style="font-family: D-DINCondensed-Bold;">PRIA</p>
+                    </div>
+                    <div class="col">
+                      <p class="my-1 text-muted text-end" style="font-family: D-DINCondensed-Bold;">XS-XXL</p>
+                    </div>
+                  </div>
+                  <h5 class="my-1" style="font-family: D-DINCondensed-Bold;">At MoMA Lengan Pendek</h5>
+                  <br>
+                  <div class="mt-auto">
+                    <p class="my-1 text-muted">New</p>
+                    <h5 style="font-family: D-DIN-Bold;">Rp199.000</h5>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col d-flex align-items-stretch">
+              <a href="detail.html" class="card text-dark" style="text-decoration: none;">
+                <img src="img/katalog/men/c9.jpg" class="card-img-top" alt="...">
+                <div class="card-body d-flex flex-column">
+                  <div class="row">
+                    <div class="col">
+                      <p class="my-1 text-muted" style="font-family: D-DINCondensed-Bold;">UNISEKS</p>
+                    </div>
+                    <div class="col">
+                      <p class="my-1 text-muted text-end" style="font-family: D-DINCondensed-Bold;">XS-XXL</p>
+                    </div>
+                  </div>
+                  <h5 class="my-1" style="font-family: D-DINCondensed-Bold;">Spy x Family Lengan Pendek</h5>
+                  <br>
+                  <div class="mt-auto">
+                    <p class="my-1 text-muted"></p>
+                    <h5 style="font-family: D-DIN-Bold;">Rp199.000</h5>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- footer -->
+  <footer class="container-fluid bg-dark py-3 px-5 text-light">
+    <div class="row mb-3">
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+        <div class="row">
+          <p class="fw-bold">Tentang Kelontong</p>
+        </div>
+        <div class="row">
+          <p><a href="#" style="text-decoration: none; color: white;">Informasi</a></p>
+        </div>
+        <div class="row">
+          <p><a href="#" style="text-decoration: none; color: white;">Pencari Lokasi Toko</a></p>
+        </div>
+        <div class="row">
+          <p><a href="#" style="text-decoration: none; color: white;">Pembelian Jumlah Besar</a></p>
+        </div>
+        <div class="row">
+          <p><a href="#" style="text-decoration: none; color: white;">Layanan Alterasi</a></p>
+        </div>
+        <div class="row">
+          <p><a href="#" style="text-decoration: none; color: white;">Layanan Kirim Kado</a></p>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+        <div class="row">
+          <p class="fw-bold">Bantuan</p>
+        </div>
+        <div class="row">
+          <p><a href="#" style="text-decoration: none; color: white;">FAQ</a></p>
+        </div>
+        <div class="row">
+          <p><a href="#" style="text-decoration: none; color: white;">Kebijakan Pengembalian</a></p>
+        </div>
+        <div class="row">
+          <p><a href="#" style="text-decoration: none; color: white;">Kebijakan Privasi</a></p>
+        </div>
+        <div class="row">
+          <p><a href="#" style="text-decoration: none; color: white;">Aksesibilitas</a></p>
+        </div>
+        <div class="row">
+          <p><a href="#" style="text-decoration: none; color: white;">Hubungi Kami</a></p>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+        <div class="row">
+          <p class="fw-bold">Akun</p>
+        </div>
+        <div class="row">
+          <p><a href="#" style="text-decoration: none; color: white;">Membership</a></p>
+        </div>
+        <div class="row">
+          <p><a href="#" style="text-decoration: none; color: white;">Profil</a></p>
+        </div>
+        <div class="row">
+          <p><a href="#" style="text-decoration: none; color: white;">Kupon</a></p>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+        <div class="row">
+          <p class="fw-bold">Hubungi Kami</p>
+        </div>
+        <div class="row">
+          <p>Untuk Layanan Pengaduan</p>
+        </div>
+        <div class="row">
+          <p>Konsumen KELONTONG Indonesia</p>
+        </div>
+        <div class="row">
+          <p>(031) 80332160290 dan support@kelontong.co.id</p>
+        </div>
+        <hr>
+        <div class="row">
+          <p>Layanan Pengaduan Konsumen,</p>
+        </div>
+        <div class="row">
+          <p>Direktorat Jenderal Perlindungan Konsumen dan Tertib Niaga,</p>
+        </div>
+        <div class="row">
+          <p>Kementerian Perdagangan Republik Indonesia,</p>
+        </div>
+        <div class="row">
+          <p>0853-1111-1010 (WhatsApp)</p>
+        </div>
+
+
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+        <div class="row">
+          <p class="fw-bold">E-Newsletter</p>
+        </div>
+        <div class="row">
+          <p>Daftar dan jadilah yang pertama mengetahui tentang pendatang baru, promosi, acara di dalam toko, dan banyak
+            lagi.</p>
+        </div>
+        <div class="row">
+          <p><a href="#" style="color: white;">BERLANGGANAN SEKARANG</a></p>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+        <div class="row">
+          <p class="fw-bold">Akun Sosial KELONTONG</p>
+        </div>
+        <div class="row">
+          <div class="col"><a href="#"><img src="img/logo/fb.png" class="col-12" alt="..."></a></div>
+          <div class="col"><a href="#"><img src="img/logo/ig.png" class="col-12" alt="..."></a></div>
+          <div class="col"><a href="#"><img src="img/logo/tw.png" class="col-12" alt="..."></a></div>
+          <div class="col"><a href="#"><img src="img/logo/yt.png" class="col-12" alt="..."></a></div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,531 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>KELONTONG</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <style>
+    @font-face {
+      font-family: 'D-DINCondensed';
+      src: url("./font/D-DINCondensed.otf") format("opentype");
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'D-DIN';
+      src: url("./font/D-DIN.otf") format("opentype");
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'D-DINCondensed-Bold';
+      src: url("./font/D-DINCondensed-Bold.otf") format("opentype");
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'D-DIN-Bold';
+      src: url("./font/D-DIN-Bold.otf") format("opentype");
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    h1 {
+      font-size: 40pt;
+    }
+
+    .card {
+      background-color: transparent;
+    }
+  </style>
+</head>
+
+
+<body>
+  <!-- header -->
+  <nav class="navbar navbar-expand-lg bg-light sticky-top">
+    <div class="container">
+      <a class="navbar-brand justify-content-start" href="landing.html">KELONTONG</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-start" id="navbarNavAltMarkup">
+        <div class="navbar-nav" style="font-family: D-DIN-Bold;">
+          <a class="nav-link active" aria-current="page" href="landing.html">HOME</a>
+          <a class="nav-link" href="catalog.html">CATALOG</a>
+          <a class="nav-link" href="#">ABOUT US</a>
+        </div>
+      </div>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+        <div class="navbar-nav" style="font-family: D-DIN-Bold;">
+          <a class="nav-link mx-2" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person"
+              viewBox="0 0 16 16">
+              <path
+                d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z" />
+            </svg>
+          </a>
+          <a class="nav-link mx-2" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-heart"
+              viewBox="0 0 16 16">
+              <path
+                d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+            </svg>
+          </a>
+          <a class="nav-link ms-2" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart3"
+              viewBox="0 0 16 16">
+              <path
+                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- banner -->
+  <div id="carouselExampleCaptions" class="carousel slide img-fluid" data-bs-ride="carousel" data-bs-interval="5000">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <a href="detail.html"><img src="img/g1.jpg" class="d-block w-100" alt="..."></a>
+        <div class="carousel-caption d-none d-md-block">
+          <h3>Kemeja katun premium bersiluet loose-fit.</h3>
+          <p>Kemeja Katun Garis Lengan Panjang</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <a href="detail.html"><img src="img/g2.jpg" class="d-block w-100" alt="..."></a>
+        <div class="carousel-caption d-none d-md-block">
+          <h3>Celana pendek ramping yang nyaman dan lembut.</h3>
+          <p>Celana Pendek Stretch Slim Fit</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <a href="detail.html"><img src="img/g3.jpg" class="d-block w-100" alt="..."></a>
+        <div class="carousel-caption d-none d-md-block">
+          <h3>Kemeja kasual dengan 100% katun premium.</h3>
+          <p>Kemeja Extra Fine Cotton Broadcloth Motif</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- isi -->
+  <div class="container-fluid bg-light py-5">
+
+    <!-- kategori -->
+    <div class="container">
+      <div class="row mb-5">
+        <div class="card mb-3">
+          <h2 class="card-header" style="background-color: transparent; font-family: D-DIN-Bold;">KATEGORI</h2>
+          <div class="card-body">
+            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="row mx-2">
+                    <div class="col-3 text-center">
+                      <div class="card">
+                        <a href="catalog.html" class="text-dark" style="text-decoration: none;">
+                          <img src="img/luaran.jpg" class="card-img-top" alt="...">
+                          <div class="card-text fw-semibold">LUARAN</div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-3 text-center">
+                      <div class="card">
+                        <a href="catalog.html" class="text-dark" style="text-decoration: none;">
+                          <img src="img/tshirt.jpg" class="card-img-top" alt="...">
+                          <div class="card-text fw-semibold">T-SHIRTS</div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-3 text-center">
+                      <div class="card">
+                        <a href="catalog.html" class="text-dark" style="text-decoration: none;">
+                          <img src="img/polo.jpg" class="card-img-top" alt="...">
+                          <div class="card-text fw-semibold">POLO</div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-3 text-center">
+                      <div class="card">
+                        <a href="catalog.html" class="text-dark" style="text-decoration: none;">
+                          <img src="img/kemejakasual.jpg" class="card-img-top" alt="...">
+                          <div class="card-text fw-semibold">KEMEJA KASUAL</div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row mx-2">
+                    <div class="col-3 text-center">
+                      <div class="card">
+                        <a href="catalog.html" class="text-dark" style="text-decoration: none;">
+                          <img src="img/celana.jpg" class="card-img-top" alt="...">
+                          <div class="card-text fw-semibold">CELANA PANJANG</div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-3 text-center">
+                      <div class="card">
+                        <a href="catalog.html" class="text-dark" style="text-decoration: none;">
+                          <img src="img/jeans.jpg" class="card-img-top" alt="...">
+                          <div class="card-text fw-semibold">JEANS</div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-3 text-center">
+                      <div class="card">
+                        <a href="catalog.html" class="text-dark" style="text-decoration: none;">
+                          <img src="img/lounge.jpg" class="card-img-top" alt="...">
+                          <div class="card-text fw-semibold">LOUNGEWEAR</div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-3 text-center">
+                      <div class="card">
+                        <a href="catalog.html" class="text-dark" style="text-decoration: none;">
+                          <img src="img/dalaman.jpg" class="card-img-top" alt="...">
+                          <div class="card-text fw-semibold">DALAMAN</div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- news -->
+    <div class="container">
+      <div class="row mb-2">
+        <div class="card border-0">
+          <h2 class="card-header" style="font-family: D-DIN-Bold; background-color: transparent;">KELONTONG TODAY</h2>
+          <div class="card-body">
+            <div class="row row-cols-1 row-cols-md-2 g-4 mb-5">
+              <div class="col">
+                <div class="card border-0 mb-3" style="max-width: 540px;">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <a href="#" class="text-dark" style="text-decoration: none;">
+                        <img src="img/news/jacket.jpg" class="img-fluid rounded" alt="...">
+                      </a>
+                    </div>
+                    <div class="col-md-8">
+                      <a href="#" class="text-dark" style="text-decoration: none;">
+                        <div class="card-body">
+                          <h5 class="card-title" style="font-family: D-DIN-Bold;">Travel Essential Jackets</h5>
+                          <p class="card-text">Ini 4 jaket esensial yang tepat untuk traveling di cuaca dingin!</p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card border-0 mb-3" style="max-width: 540px;">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <a href="#" class="text-dark" style="text-decoration: none;">
+                        <img src="img/news/autumn.jpg" class="img-fluid rounded" alt="...">
+                      </a>
+                    </div>
+                    <div class="col-md-8">
+                      <a href="#" class="text-dark" style="text-decoration: none;">
+                        <div class="card-body">
+                          <h5 class="card-title" style="font-family: D-DIN-Bold;">Autumn Color Mix and Match</h5>
+                          <p class="card-text">Sembilan perpaduan warna baju yang serasi, bisa jadi inspirasi</p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card border-0 mb-3" style="max-width: 540px;">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <a href="#" class="text-dark" style="text-decoration: none;">
+                        <img src="img/news/inspire.jpg" class="img-fluid rounded" alt="...">
+                      </a>
+                    </div>
+                    <div class="col-md-8">
+                      <a href="#" class="text-dark" style="text-decoration: none;">
+                        <div class="card-body">
+                          <h5 class="card-title" style="font-family: D-DIN-Bold;">7 Inspirasi Style Kemeja Putih Wanita
+                            untuk Sehari-hari</h5>
+                          <p class="card-text">Menggunakan kemeja putih memang tak pernah ketinggalan zaman! Mulai dari
+                            gaya formal hingga casual, kemeja putih bisa kamu andalkan untuk outfit sehari-hari.</p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card border-0 mb-3" style="max-width: 540px;">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <a href="#" class="text-dark" style="text-decoration: none;">
+                        <img src="img/news/earth.jpg" class="img-fluid rounded" alt="...">
+                      </a>
+                    </div>
+                    <div class="col-md-8">
+                      <a href="#" class="text-dark" style="text-decoration: none;">
+                        <div class="card-body">
+                          <h5 class="card-title" style="font-family: D-DIN-Bold;">Baru! Ini Pakaian Warna Earth-tone
+                            Stylish KELONTONG!</h5>
+                          <p class="card-text">Saat kamu bosan dengan warna basic, maka ini adalah waktu yang tepat
+                            untuk tampil baru dengan mix & match warna earth-tone.</p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- sign nup -->
+    <div class="row justify-content-center">
+      <div class="col-10 col-sm-8 col-md-6 col-lg-5 col-xl-4">
+        <div class="card">
+          <div class="card-body">
+            <h2 class="card-title text-center">GET 10% OFF YOUR<br>FIRST ORDER</h2>
+            <p class="card-text text-center">Sign up for promotions, tailored new arrivals, stock updates and more -
+              straight to your inbox</p>
+
+            <div class="d-flex flex-row mb-3 justify-content-evenly">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                  Womenswear
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                <label class="form-check-label" for="flexRadioDefault2">
+                  Menswear
+                </label>
+              </div>
+            </div>
+
+            <p class="card-text">GET UPDATES BY</p>
+
+            <form>
+              <div class="row">
+                <div class="col-12 mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                    placeholder="Your email address">
+                </div>
+              </div>
+              <label for="exampleInputNum" class="form-label">SMS</label>
+              <div class="row">
+                <div class="col-4 mb-3">
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected>+62</option>
+                    <option value="1">+61</option>
+                    <option value="2">+420</option>
+                    <option value="3">+57</option>
+                    <option value="4">+345</option>
+                    <option value="5">+213</option>
+                    <option value="6">+93</option>
+                    <option value="7">+54</option>
+                    <option value="8">+43</option>
+                    <option value="9">+880</option>
+                    <option value="10">+81</option>
+                    <option value="11">+47</option>
+                    <option value="12">+975</option>
+                  </select>
+                </div>
+                <div class="col-8 mb-3">
+                  <input type="tel" class="form-control" id="exampleInputNum" aria-describedby="emailHelp"
+                    placeholder="Your phone number">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 mb-3">
+                  <button type="submit" class="col-12 btn btn-dark">Sign Up</button>
+                </div>
+              </div>
+            </form>
+
+            <p class="card-text text-center">By signing up, you agree to our <a href="#" class="text-dark">Privacy
+                Policy</a>. Unsubscribe anytime at the
+              bottom of our emails.</p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+  <!-- footer -->
+  <footer class="container-fluid bg-dark py-3 px-5 text-light">
+    <div class="row mb-3">
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+        <div class="row">
+          <p class="fw-bold">Tentang Kelontong</p>
+        </div>
+        <div class="row">
+          <p><a href="#" style="text-decoration: none; color: white;">Informasi</a></p>
+        </div>
+        <div class="row">
+          <p><a href="#" style="text-decoration: none; color: white;">Pencari Lokasi Toko</a></p>
+        </div>
+        <div class="row">
+          <p><a href="#" style="text-decoration: none; color: white;">Pembelian Jumlah Besar</a></p>
+        </div>
+        <div class="row">
+          <p><a href="#" style="text-decoration: none; color: white;">Layanan Alterasi</a></p>
+        </div>
+        <div class="row">
+          <p><a href="#" style="text-decoration: none; color: white;">Layanan Kirim Kado</a></p>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+        <div class="row">
+          <p class="fw-bold">Bantuan</p>
+        </div>
+        <div class="row">
+          <p><a href="#" style="text-decoration: none; color: white;">FAQ</a></p>
+        </div>
+        <div class="row">
+          <p><a href="#" style="text-decoration: none; color: white;">Kebijakan Pengembalian</a></p>
+        </div>
+        <div class="row">
+          <p><a href="#" style="text-decoration: none; color: white;">Kebijakan Privasi</a></p>
+        </div>
+        <div class="row">
+          <p><a href="#" style="text-decoration: none; color: white;">Aksesibilitas</a></p>
+        </div>
+        <div class="row">
+          <p><a href="#" style="text-decoration: none; color: white;">Hubungi Kami</a></p>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+        <div class="row">
+          <p class="fw-bold">Akun</p>
+        </div>
+        <div class="row">
+          <p><a href="#" style="text-decoration: none; color: white;">Membership</a></p>
+        </div>
+        <div class="row">
+          <p><a href="#" style="text-decoration: none; color: white;">Profil</a></p>
+        </div>
+        <div class="row">
+          <p><a href="#" style="text-decoration: none; color: white;">Kupon</a></p>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+        <div class="row">
+          <p class="fw-bold">Hubungi Kami</p>
+        </div>
+        <div class="row">
+          <p>Untuk Layanan Pengaduan</p>
+        </div>
+        <div class="row">
+          <p>Konsumen KELONTONG Indonesia</p>
+        </div>
+        <div class="row">
+          <p>(031) 80332160290 dan support@kelontong.co.id</p>
+        </div>
+        <hr>
+        <div class="row">
+          <p>Layanan Pengaduan Konsumen,</p>
+        </div>
+        <div class="row">
+          <p>Direktorat Jenderal Perlindungan Konsumen dan Tertib Niaga,</p>
+        </div>
+        <div class="row">
+          <p>Kementerian Perdagangan Republik Indonesia,</p>
+        </div>
+        <div class="row">
+          <p>0853-1111-1010 (WhatsApp)</p>
+        </div>
+
+
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+        <div class="row">
+          <p class="fw-bold">E-Newsletter</p>
+        </div>
+        <div class="row">
+          <p>Daftar dan jadilah yang pertama mengetahui tentang pendatang baru, promosi, acara di dalam toko, dan banyak
+            lagi.</p>
+        </div>
+        <div class="row">
+          <p><a href="#" style="color: white;">BERLANGGANAN SEKARANG</a></p>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+        <div class="row">
+          <p class="fw-bold">Akun Sosial KELONTONG</p>
+        </div>
+        <div class="row">
+          <div class="col"><a href="#"><img src="img/logo/fb.png" class="col-12" alt="..."></a></div>
+          <div class="col"><a href="#"><img src="img/logo/ig.png" class="col-12" alt="..."></a></div>
+          <div class="col"><a href="#"><img src="img/logo/tw.png" class="col-12" alt="..."></a></div>
+          <div class="col"><a href="#"><img src="img/logo/yt.png" class="col-12" alt="..."></a></div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
